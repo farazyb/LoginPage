@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
+    color: 'green',
     marginBottom: 5,
   },
 });
