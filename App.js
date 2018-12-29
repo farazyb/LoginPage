@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -16,34 +17,52 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>hi how Are you!</Text>
+        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} >
+          <Text style={styles.instructions2}>To get started, edit App.js</Text>
+        </View>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+
       </View>
-    );
+
+    )
   }
 }
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'red',
   },
   welcome: {
     fontSize: 20,
+
+flex:2,
     textAlign: 'center',
     margin: 10,
+    backgroundColor: 'blue',
   },
   instructions: {
+    flex:5,
     textAlign: 'center',
-    color: 'green',
+    color: 'yellow',
     marginBottom: 5,
+    backgroundColor: 'green',
+  },
+  instructions2: {
+
+    textAlign: 'center',
+    color: 'red',
+    marginBottom: 5,
+    backgroundColor: 'yellow',
   },
 });
