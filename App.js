@@ -28,8 +28,7 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>{instructions}</Text>
 
       </View>
-
-    )
+    );
   }
 }
 
