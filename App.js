@@ -8,6 +8,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import { Button } from 'react-native'
 
 
 const instructions = Platform.select({
@@ -23,6 +24,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Text style={styles.welcome}>No Never !</Text>
         <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} >
           <Text style={styles.instructions2}>To get started, edit App.js</Text>
         </View>
